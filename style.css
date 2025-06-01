@@ -1,0 +1,6 @@
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Make sure to override other colors for links, nav, etc., in dark mode */

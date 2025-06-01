@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body >
+<header>
+  <nav class="navbar">
+    
+     <button id="theme-toggle" aria-label="Toggle dark mode" style="font-size: 1.5rem; background: none; border: none; cursor: pointer;">
+  ☀️
+</button>
+    
+    <div class="hamburger" id="hamburger">☰</div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Portfolio</a>
+      <a href="education.html">Education & Skills</a>
+      
+
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <div class="container">
+    <div class="contact-card">
+      <h1>Contact Me</h1>
+      <div class="contact-info">
+        <p><strong>Email:</strong> deepanshi@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/deepanshi-46b3b7249" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/deepanshi43" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript for toggling the menu -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+</body>
+</html>

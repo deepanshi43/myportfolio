@@ -1,0 +1,209 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding:20px;
+}
+
+/* NAVBAR */
+/* === BASE STYLES === */
+.navbar {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ff6600;
+}
+
+.btn-primary {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* === HAMBURGER STYLE === */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* === MEDIA QUERY FOR SMALL SCREENS === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: right;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+}
+
+
+/* CARD LAYOUT */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  max-width: 420px;
+  flex: 1 1 300px;
+}
+
+/* HEADINGS & LISTS */
+.card h2 {
+  color: #1e1e1e;
+  border-bottom: 3px solid #ff6600;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #ff6600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}
+.skills-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skills-heading {
+  color: #ff6600;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+h4{
+  padding-left: 0.9rem;
+}
+/* Grid for language logos */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Row for tools */
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Style the logos */
+.logo-grid img,
+.logo-row img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover,
+.logo-row img:hover {
+  transform: scale(1.15);
+}
+
+
+
+ .dark-mode .card ul li {
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .card h4 {
+  color: rgb(0, 0, 0);
+}
+
+
+.dark-mode .card  {
+  background: #cdcaca;
+}
+

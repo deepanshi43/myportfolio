@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education & Skills</title>
+  <link rel="stylesheet" href="education.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+   
+     <button id="theme-toggle" aria-label="Toggle dark mode" style="font-size: 1.5rem; background: none; border: none; cursor: pointer;">
+  ☀️
+</button>
+
+    <!-- Hamburger icon (only visible on small screens) -->
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Portfolio</a>
+      <a href="education.html" class="active">Education & Skills</a>
+      <!-- <button id="theme-toggle" aria-label="Toggle dark mode" style="font-size: 1.5rem; background: none; border: none; cursor: pointer;">
+  ☀️
+</button> -->
+
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <main class="card-row">
+    <section class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>BTech in Computer Science & Engineering<br>Currently in 3rd year | OCPA: 8.85</li>
+        <li>Senior Secondary (12th Grade) – M.K.V.P IC Chakarsi (Amroha)<br>PCM, English, Hindi | Scored 81%</li>
+      </ul>
+    </section>
+
+   <section class="card">
+  <h2>Skills</h2>
+  <h4>Problem solving | Continuous learner </h4>
+  <div class="skills-section">
+    <h3 class="skills-heading">Languages</h3>
+    <div class="logo-grid">
+      <img src="../myportfolio/image/clang.png" alt="C" />
+      <img src="../myportfolio/image/c++lang.png" alt="C++" />
+      <img src="../myportfolio/image/htmllang.png" alt="HTML" />
+      <img src="../myportfolio/image/cssimg.png" alt="CSS" />
+      <img src="../myportfolio/image/js lang.jpeg" alt="JavaScript" />
+      <img src="../myportfolio/image/mysqllang.png" alt="MySQL" />
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h3 class="skills-heading">Tools</h3>
+    <div class="logo-row">
+      <img src="../myportfolio/image/vscode.jpeg" alt="VS Code" />
+      <img src="../myportfolio/image/gitimg.png" alt="Git" />
+      <img src="../myportfolio/image/githubimg.png" alt="Git" />
+
+    </div>
+  </div>
+</section>
+
+
+  </main>
+  <script src="script.js"></script>
+  <!-- Toggle menu script -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+</body>
+</html>

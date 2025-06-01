@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepanshi | Portfolio</title>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <!-- <div class="logo">Deepanshi</div> -->
+     <button id="theme-toggle" aria-label="Toggle dark mode" style="font-size: 1.5rem; background: none; border: none; cursor: pointer;">
+  ☀️
+</button>
+
+    <!-- Hamburger icon (only visible on small screens) -->
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Portfolio</a>
+      <a href="education.html" class="active">Education & Skills</a>
+      
+
+      <a href="contact.html" class="btn-primary">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  <main class="hero">
+    <div class="hero-left">
+      <h1>Hello! 👋</h1>
+      <h2>I'm <span class="highlight">Deepanshi</span></h2>
+      <p class="tagline">Web Developer | UI Enthusiast</p>
+      <p class="desc">I build beautiful, user-friendly websites and interfaces that bring ideas to life.</p>
+      <div class="hero-buttons">
+        <a href="project.html" class="btn-secondary">View Projects</a>
+        
+      </div>
+    </div>
+    <div class="hero-right">
+      
+    <img src="../myportfolio/image/photo.jpg">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+  
+  const photo = document.querySelector(".hero-right img");
+
+  if (photo) {
+    photo.addEventListener("mouseenter", () => {
+      photo.style.transform = "scale(1.05)";
+      photo.style.transition = "transform 0.3s ease";
+    });
+
+    photo.addEventListener("mouseleave", () => {
+      photo.style.transform = "scale(1)";
+    });
+  }
+
+
+
+
+
+
+
+<!-- Toggle menu script -->
+
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+
+  
+  
+  
+
+</script>
+ 
+  
+</body>
+</html>

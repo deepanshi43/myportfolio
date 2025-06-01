@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<header>
+  <nav class="navbar">
+   
+      <button id="theme-toggle" aria-label="Toggle dark mode" style="font-size: 1.5rem; background: none; border: none; cursor: pointer;">
+  ☀️
+</button>
+    
+    <div class="hamburger" id="hamburger">☰</div>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Portfolio</a>
+      <a href="education.html">Education & Skills</a>
+     
+
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+  <section class="content">
+    <h2>Projects</h2>
+    <ol>
+      <li><h3>AI-Powered Interview Preparation System</h3>
+          <p>A tool to help job seekers improve interview skills using AI with real-time feedback and personalized questions. (In Progress)</p></li>
+      <li><h3>Online Bookstore Website</h3>
+          <p>A user-friendly website to browse and buy books, designed to practice content management and layout. (In Progress)</p></li>
+      <li><h3>User Registration Form</h3>
+          <p>Simple HTML and CSS registration form with validation for a clean sign-up experience.</p></li>
+      <li><h3>Portfolio Website</h3>
+          <p>Personal website showcasing my work and progress in web development.</p></li>
+    </ol>
+  </section>
+  <script src="script.js"></script>
+ <!-- JavaScript for toggling the menu -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+  
+</body>
+</html>
